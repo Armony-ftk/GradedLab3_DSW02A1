@@ -3,7 +3,7 @@ by: FATAKI NA
 on: 3/11/2026
 
 QUESTION 2
-Please note that the requirement in the case study says that "each word of the user input phrase should be added to the list". Which makes the output different than the output snippet given on the question paper.
+Please note that the requirement in the case study says that "EACH WORD of the user input phrase should be added to the list". Which makes the output different than the output snippet given on the question paper.
 */
 
 const addButton = document.getElementById("add");
@@ -71,7 +71,7 @@ removeButton.addEventListener("click", function () {
 
   changeColors();
 
-  input.value = "";
+  userInput.value = "";
 });
 
 function changeColors() {

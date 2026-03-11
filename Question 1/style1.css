@@ -1,5 +1,24 @@
+/* 
+by: FATAKI NA
+on: 3/11/2026
+
+QUESTION 1
+ */
+
 #sentence,
 #sent-count,
 #Execute {
   background-color: rgb(200, 200, 200);
+  text-align: center;
 }
+
+#sentence {
+    width: 400px;
+}
+
+
+#sent-count {
+    width: 200px;
+}
+
+
