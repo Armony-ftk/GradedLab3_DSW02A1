@@ -32,12 +32,14 @@ addButton.addEventListener("click", function() {
         }
     }
 
+    changeColors();
+
     userInput.value = "";
 });
 
 removeButton.addEventListener("click", function() {
     let textLower = userInput.value.toLowerCase();
-    let items = document.getElementsByTagName("li");
+    let items = userList.getElementsByTagName("li");
 
     for (i=0; i<items.length; i++) {
         if (items[i].textContent.toLocaleLowerCase() = textLower) {
@@ -49,4 +51,19 @@ removeButton.addEventListener("click", function() {
             
         }
     }
+
+    userInput.value = "";
 }); 
+
+function changeColors() {
+    let items = userList.getElementsByTagName("li");
+
+    for (let i = 0; i < items.length; i++) {
+        if (i % 2 === 0) {
+            items[i].style.backgroundColor = "white";
+        }
+        else {
+            items[i].style.backgroundColor = "yellow";
+        }
+    }
+}
